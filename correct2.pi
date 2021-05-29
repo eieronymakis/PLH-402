@@ -1,0 +1,52 @@
+const pi = 3.14 real;
+var i,j = 9 int;
+var z = 0 int;
+
+func sort( _inp [] int ){
+	var counter int;
+	var counter2 int;
+	var tmp1 int;
+	var tmp2 int;
+	for(counter = z ; counter < 9; counter = counter +  1 )
+	for ( counter2 = z ; counter2 < 8 ; counter2 = counter2 + 1 ){
+		if ( _inp[ counter2 ] > _inp[ counter2 + 1 ] ){
+			tmp1 = _inp[ counter2 ];
+			tmp2 = _inp[ counter2 + 1 ];
+			_inp[ counter2 ] = tmp2 ;
+			_inp[ counter2  + 1 ] = tmp1;
+		}
+	}
+	writeInt( _inp[0] );
+	writeString(" ");
+	writeInt( _inp[1] );
+	writeString(" ");
+	writeInt( _inp[2] );
+	writeString(" ");
+	writeInt( _inp[3] );
+	writeString(" ");
+	writeInt( _inp[4] );
+	writeString(" ");
+	writeInt( _inp[5] );
+	writeString(" ");
+	writeInt( _inp[6] );
+	writeString(" ");
+	writeInt( _inp[7] );
+	writeString(" ");
+	writeInt( _inp[8] );
+};
+
+func begin(){
+	var table [9]int;
+	table[0] = 1;
+	table[1] = 4;
+	table[2] = 5;
+	table[3] = 2;
+	table[4] = 7;
+	table[5] = 9;
+	table[6] = 3;
+	table[7] = 6;
+	table[8] = 24;
+	sort(table);
+};
+
+	  

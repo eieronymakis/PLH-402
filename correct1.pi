@@ -1,0 +1,41 @@
+func odd_even(_input int) string {
+	
+	var ans = "Even" string;
+	var ans2 = "Odd" string;
+	
+	if(_input % 2 == 0)
+	{
+	   return ans;
+	}
+	else
+	{
+		return ans2;
+	}
+};
+
+func begin(){
+
+	var ccount = 1 int;
+	var evencount = 0 int;
+	var oddcount = 0 int;
+	
+	writeString("\nType a number : ");
+	var endnum = readInt() int;
+	
+	while(ccount <= endnum){
+		if (odd_even(ccount) == "Even"){
+			evencount = evencount + 1;
+		}else
+		{
+			oddcount = oddcount + 1;
+		}
+		ccount = ccount + 1;
+	};
+	
+	writeString("\nEven Count : ");
+	writeInt(evencount);
+	writeString("\nOdd Count : ");
+	writeInt(oddcount);
+};
+		
+	  
