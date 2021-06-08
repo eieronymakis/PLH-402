@@ -1,0 +1,5 @@
+README--
+
+
+If you run this project on MAC OSX keep make file as is,
+otherwise change the makefile line to : gcc -o mycompiler lex.yy.c myanalyzer.tab.c cgen.c -lfl
